@@ -1,0 +1,226 @@
+@import "default.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body{
+    font-family: "noto sans KR";
+}
+#main_header{
+    width:100%; max-width:1920px; height:50px; background: transparent;
+    position:absolute; left: 0px; top:0px; z-index: 100;
+}
+
+#main_header>h1{
+    font-size:2rem; padding:10px 10px; width:80px; height:30px; text-align: center;
+    text-shadow: 0px 3px 3px rgba(0,0,0,0.4); color: #fff; display: block;
+    margin: 0 auto 10px;
+}
+#main_header>#gnb{
+     width:40%; height:50px; margin: auto;
+}
+#main_header>#gnb>ul{
+    width:100%; display: flex;
+}
+#main_header>#gnb>ul>li{
+    width:20%; background: rgba(0,0,0,0.4);position: relative;
+}
+#main_header>#gnb>ul>li:hover>a{
+    color:#ff7575;
+}
+#main_header>#gnb>ul>li>a{
+    display: block; width:auto; height:50px; text-align: center; line-height: 50px;
+    color:#fff;
+}
+#main_header>#gnb>ul>li>.sub{
+    width:150px;
+    position: absolute; left:0px; top:50px; background:rgba(0,0,0,0.4);
+    display: none;
+}
+#main_header>#gnb>ul>li>.sub>ul>li{
+    padding:10px 0 10px 5px;
+}
+#main_header>#gnb>ul>li>.sub>ul>li:hover>a{
+    color: #ff7575;
+}
+#main_header>#gnb>ul>li>.sub>ul>li>a{
+    display: block; color: #fff;
+}
+#main_container{
+    width:100%; max-width:1920px;
+   
+}
+#main_container>.slides{
+     position: relative;
+}
+#main_container>.slides>img:first-child{
+    display: block; position: relative;
+}
+#main_container>.slides>img{
+    position: absolute; display: none; width:100%; left:0px; top: 0px;
+}
+#main_container>.textbox{
+    width:80%; height:200px; background: transparent;
+    position: absolute; left: 50%; top:50%;
+    transform: translate(-50%,50%); font-family:"Italianno";
+}
+#main_container>.textbox>h2{
+    font-size:4rem; color: #fff; text-shadow:3px 3px 0 rgba(0,0,0,0.4);
+    text-align: center;
+}
+#main_container>.textbox>p{
+    font-size: 2rem; text-align: center; text-shadow:2px 2px 0 rgba(0,0,0,0.4);
+    color: #fff;
+}
+#main_container>.textbox>p>span{
+    font-size: 2.2rem; color: tomato;
+}
+#hotel_name{
+    width:100%; max-width:1920px; height: auto;
+     overflow: hidden; padding-top: 100px;padding-bottom: 50px;   
+}
+#hotel_name>h2{
+    font-size: 2.5rem; text-align: center;  margin-bottom: 60px;
+}
+#hotel_name>h2::after{
+    content: ""; display: block; width:100px; border-bottom:2px solid #fc0; 
+    margin: auto;
+}
+#hotel_name>.innerbox{
+    width:100%;  max-width:1240px; margin: auto; box-sizing: border-box;
+    height: auto; overflow: hidden; padding-bottom: 30px;
+    
+}
+#hotel_name>.innerbox>figure{
+    width:30%; margin-right:5%; background:transparent; float: left;
+    padding: 20px 20px; box-sizing: border-box;
+    box-shadow: 0px 4px 5px 0 rgba(0,0,0,0.2);
+    transition: all 0.4s;
+}
+#hotel_name>.innerbox>figure:hover{
+    background:rgba(229, 246, 255, 0.76); 
+}
+
+#hotel_name>.innerbox>figure:nth-child(3),#hotel_name>.innerbox>figure:nth-child(6){
+    margin-right: 0%;
+}
+#hotel_name>.innerbox>figure:nth-child(2),#hotel_name>.innerbox>figure:nth-child(5){
+    margin-top: 30px;
+}
+#hotel_name>.innerbox>figure>.imgbox{
+    width:100%; height:200px; margin:auto; overflow: hidden;
+    margin-bottom: 20px;
+    
+}
+
+#hotel_name>.innerbox>figure img{
+    width:100%; height:100%; transition:all 0.4s;
+}
+#hotel_name>.innerbox>figure img:hover{
+    transform: scale(110%);
+}
+#hotel_name>.innerbox>figure>figcaption>h3{
+    font-size:1.5rem;
+}
+#hotel_name>.innerbox>figure>figcaption>p{
+    font-size: 0.9rem; letter-spacing:1.2px; color: #330; margin-bottom: 20px;
+}
+#hotel_name>.innerbox>figure>figcaption>a{
+    display: block; width:100%; height:40px;
+    text-align: center; color: #110; background: #ccc;
+    line-height: 40px; transition:all 0.4s;
+}
+#hotel_name>.innerbox>figure>figcaption>a:hover{
+    background: #111; color:#fff;
+}
+#speed{
+    width:100%; max-width:1920px; background: #ff7575;
+}
+#speed>h2{
+    font-size:2rem; text-align: center; margin-bottom: 30px;
+}
+#speed>.innerbox{
+    width:100%; max-width:1240px; margin: auto;
+}
+#speed>.innerbox>.leftbox{
+    float: left; width:50%;
+}
+#speed>.innerbox>.leftbox>#hotel_name{
+    width:200px; height:50px; border:none; float: left;
+}
+#speed>.innerbox>.leftbox>#button{
+    float: left; border: none; width:40px; height:50px;
+}
+#main_footer{
+    width:100%; max-width: 1920px; overflow: hidden;
+    background:#111; padding:40px 0 30px;
+}
+#main_footer>.innerbox{
+    width:100%; max-width:1024px; margin: auto;
+}
+#main_footer>.innerbox>.footer_manu{
+    width:40%; float: left; /* background:#fff; */ 
+    margin-right: 10%; margin-bottom: 30px;
+}
+#main_footer>.innerbox>.footer_manu>ul{width:100%;height:210px; }
+#main_footer>.innerbox>.footer_manu>ul>li{
+    float: left; width:50%; height:30px; line-height: 30px;
+}
+#main_footer>.innerbox>.footer_manu>ul>li>a{
+    display: block; 
+    width:100%; height:30px; line-height: 30px; color: #fff; font-size: 1.5rem;
+}
+#main_footer>.innerbox>.footer_manu>ul>li>.sub{
+    width:100%; 
+}
+#main_footer>.innerbox>.footer_manu>ul>li>.sub>ul{}
+#main_footer>.innerbox>.footer_manu>ul>li>.sub>ul>li{
+    padding-top:5px;
+}
+#main_footer>.innerbox>.footer_manu>ul>li>.sub>ul>li>a{
+    color:#ed4a4a; width:100%; display: block;
+}
+#main_footer>.innerbox>.contact{
+    float: right; width:40%;
+}
+#main_footer>.innerbox>.contact>h3{
+    font-size: 1.5rem; color: #fff;; margin-bottom:5px;
+}
+#main_footer>.innerbox>.contact>p{
+    font-size: 0.8rem; color:#ccc; margin-bottom:10px;
+}
+#main_footer>.innerbox>.contact>.email>#email{
+    width:50%; border:none; padding: 10px;
+}
+#main_footer>.innerbox>.contact>.email>#submit{
+     border:none; padding: 10px;
+}
+#main_footer>.innerbox>.copy{
+    clear: both;
+    float: left;
+}
+#main_footer>.innerbox>.copy>p{
+    font-size: 0.8rem; color: #fff;
+}
+#main_footer>.innerbox>.sns{
+    float: right; width:40%; margin-top: -20px;
+}
+#main_footer>.innerbox>.sns>ul{
+    display: flex;
+}
+#main_footer>.innerbox>.sns>ul>li{
+    width:30px; height:30px; margin-right:10px;
+}
+#main_footer>.innerbox>.sns>ul>li:last-of-type{
+    margin-right: 0px;
+}
+#main_footer>.innerbox>.sns>ul>li>a{
+    width:30px; height:30px; display: block; text-indent: -9999em;
+    background:url(../images/tw_icon.png) no-repeat;
+    background-size: 30px, 30px;
+}
+#main_footer>.innerbox>.sns>ul>li:nth-child(2)>a{
+    background-image: url(../images/face_icon.png);
+}
+#main_footer>.innerbox>.sns>ul>li:nth-child(3)>a{
+    background-image: url(../images/is_icon.png);
+}
